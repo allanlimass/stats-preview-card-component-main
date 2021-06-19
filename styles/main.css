@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(224, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+
+  --main-heading: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  font: 400 1rem 'Inter', sans-serif;
+  color: var(--main-heading);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--main-background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font: 400 1rem 'Lexend Deca', sans-serif;
+}
+
+.container {
+  width: 60%;
+  
+  background: var(--card-background);
+
+  border-radius: .6rem;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 35%;
+  margin-left: 5rem;
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+}
+
+.content h1 > b {
+  color: var(--accent);
+}
+
+.content p {
+  color: var(--main-paragraph);
+  margin-bottom: 4rem;
+  line-height: 1.7rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cards p {
+  font-size: .8rem;
+  letter-spacing: .1rem;  
+
+  text-transform: uppercase;
+
+  margin-bottom: 0;
+}
+
+.cover img {
+  width: 100%;
+}
